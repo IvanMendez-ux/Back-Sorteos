@@ -1,0 +1,72 @@
+{"properties": [
+  {
+    "name": "spring",
+    "type": "java.lang.String",
+    "description": "A description for 'spring'"
+  },
+  {
+    "name": "datasource",
+    "type": "java.lang.String",
+    "description": "A description for 'datasource'"
+  },
+  {
+    "name": "password",
+    "type": "java.lang.String",
+    "description": "A description for 'password'"
+  },
+  {
+    "name": "username",
+    "type": "java.lang.String",
+    "description": "A description for 'username'"
+  },
+  {
+    "name": "url",
+    "type": "java.lang.String",
+    "description": "A description for 'url'"
+  },
+  {
+    "name": "driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'driver-class-name'"
+  },
+  {
+    "name": "jpa",
+    "type": "java.lang.String",
+    "description": "A description for 'jpa'"
+  },
+  {
+    "name": "hibernate",
+    "type": "java.lang.String",
+    "description": "A description for 'hibernate'"
+  },
+  {
+    "name": "ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'ddl-auto'"
+  },
+  {
+    "name": "show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'show-sql'"
+  },
+  {
+    "name": "database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'database-platform'"
+  },
+  {
+    "name": "exclude",
+    "type": "java.lang.String",
+    "description": "A description for 'exclude'"
+  },
+  {
+    "name": "autoconfigure",
+    "type": "java.lang.String",
+    "description": "A description for 'autoconfigure'"
+  },
+  {
+    "name": "version",
+    "type": "java.lang.String",
+    "description": "A description for 'version'"
+  }
+]}
