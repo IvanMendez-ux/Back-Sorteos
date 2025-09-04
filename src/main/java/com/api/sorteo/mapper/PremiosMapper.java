@@ -16,10 +16,7 @@ public class PremiosMapper implements RowMapper<Premios> {
 		premios.setNombre(rs.getString("nombre"));
 		premios.setId(rs.getInt("id"));
 		premios.setDescripcion(rs.getString("descripcion"));
-		byte[] bytes = rs.getBytes("imagen");
-		if (bytes != null) {
-			premios.setImagen(Base64.getEncoder().encodeToString(bytes)); 
-		}
+		premios.setImagen(rs.getString("imagen"));
 		premios.setPrecio(rs.getString("precio_ticket"));
 		premios.setEstado(rs.getInt("estado"));
 		premios.setCant_tickets(rs.getInt("total_tickets"));

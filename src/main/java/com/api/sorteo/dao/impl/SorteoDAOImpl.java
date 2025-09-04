@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.api.sorteo.beans.Clientes;
 import com.api.sorteo.beans.Premios;
@@ -88,6 +89,9 @@ public class SorteoDAOImpl implements SorteoDAO {
 		Premios premio = new Premios();
 		try {
 			premio = jdbcTemplate.queryForObject(GET_PREMIO_BY_ID, new PremiosMapper(), premioId);
+			String baseUrl = ServletUriComponentsBuilder.fromCurrentContextPath().toUriString();
+			premio.setImagen(baseUrl + premio.getImagen());
+
 		} catch (Exception e) {
 			logger.error("Error al obtener el premio: ", e.getMessage(), premioId);
 		}
