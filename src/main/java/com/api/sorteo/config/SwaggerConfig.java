@@ -8,12 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SwaggerConfig {
 
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title("API de Sorteos")
-                        .version("1.0")
-                        .description("Documentación de la API para el sistema de sorteos."));
-    }
+	@Bean
+	public OpenAPI customOpenAPI() {
+		return new OpenAPI().info(new Info().title("API de Sorteos").version("1.0")
+				.description("Documentación de la API para el sistema de sorteos."));
+	}
 }

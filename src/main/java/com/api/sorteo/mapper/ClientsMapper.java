@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.api.sorteo.beans.Clientes;
 
-public class ClientsMapper implements RowMapper<Clientes>{
+public class ClientsMapper implements RowMapper<Clientes> {
 
 	@Override
 	public Clientes mapRow(ResultSet rs, int i) throws SQLException {
@@ -19,5 +19,5 @@ public class ClientsMapper implements RowMapper<Clientes>{
 
 		return clientes;
 	}
-	
+
 }

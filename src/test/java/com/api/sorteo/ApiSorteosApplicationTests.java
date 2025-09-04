@@ -1,4 +1,4 @@
-package com.sorteo.demo;
+package com.api.sorteo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
